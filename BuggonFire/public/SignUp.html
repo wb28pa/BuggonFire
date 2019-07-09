@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <header>
+      </header>
+      <form action="index.html" method="post">
+        <h1>Sign Up</h1> 
+        <fieldset>
+                  <legend><span class="number">1</span></legend>
+              <label for="name">Name</label>
+                  <input type="text" id="name" name="user_name">
+                  <legend><span class="number">2</span></legend>
+                  <label for="mail">Email</label>
+                  <input type="email" id="mail" name="user_email">
+                  <legend><span class="number">3</span></legend>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="user_password">
+            </fieldset>
+<fieldset>
+    <legend><span class="number">5</span></legend>
+                  <label for="age">Age</label>
+                  <input type="radio" id="under_13" value="under_13" name="user_age">
+                  <label for="under_13" class="light">Under 18</label>
+        <br>
+                  <label for="age"></label>
+                  <input type="radio" id="over_13" value="overr_13" name="user_age">
+    <label for="over_2" class="light" data_temp_dwid="1">Over 18</label>
+            </fieldset>
+            <fieldset>
+                  <legend><span class="number">6</span></legend>
+                  <label>Interest</label>
+                  <input type="checkbox" id="environment" Value="interrst_environment" name="user_interest">
+                  <label class="light" for="environment">To save the environment</label><br>
+                  <input type="checkbox" id="School" Value="interrst_School" name="user_interest">
+                  <label class="light" for="School">School</label><br>
+                  <input type="checkbox" id="business" Value="interrst_business" name="user_business">
+                  <label class="light" for="business">Business</label>
+        </fieldset>
+        <button type="submit">Sign Up</button>
+
+      </form>
+    </body>
+</html>
