@@ -1,17 +1,11 @@
 
-function googleLogin() {
-                            
-    const app = firebase.app();                     
-                          
-    const provider = new firebase.auth.GoogleAuthProvider();
-    
-    firebase.auth()signInWithPopup(provider)
+  function googleLogin() {                                
+     
+      var provider = new firebase.auth.GoogleAuthProvider();
+      
+      firebase.auth().signInWithPopup(provider).then(function(result) {
+          var token = result.credential.accessToken;
+          var user = result.user;
+    })
    
-        .then(result {
-          const user = result.user;
-          document.write('Hello, ${user.displayName}')
-            console.log(user)
-
-          })
-          .catch(console.log)
 }

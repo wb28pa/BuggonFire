@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
       
-      <meta name="theme-color" content="#1C130E">  <meta charset="utf-8">
-  <title>Bugg</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#1C130E">  <meta charset="utf-8">
+  
+      <title>Bugg</title>
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-      
-
+    
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/6.2.4/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -20,16 +21,14 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-
   </head>
   <body>
-  
        <div class="main-nav">
         <ul class="nav">
           <li class="name">Bugg.Social</li>
           <li><a href="index.html" class="HomePage">Home</a></li>
-		  <li><a href="SignUp.html" class="NewAccount">Create Account</a></li>
-          <li><a href="LogIn.html">Sign In</a></li>
+		  <li><a href="transit_map.html" class="NewAccount">transit map</a></li>
+          <li>  <button onclick = "googleLogin()"> Login with Google </button></li>
           <li><a href="#">Contact</a></li>
         </ul>
     </div>
@@ -47,7 +46,7 @@
         <h2>About Our Brand:</h2>
         <p> &nbsp; &nbsp; At Bugg, we believe better School is only accomplished through dedication, time management, and quality work. We collectively understand that our overall achievement will be represented through the individual tasks we are assigned. As a team, we are prepared to work together, struggle together, and achieve success together!<br>
         </p>
-        
+
       </div> 
 
       <div class="card">
@@ -77,28 +76,18 @@
       </ul>
       <p class="copyright">Copyright 2019 Bugg.Social</p>
     </footer>
-        
-      <button onclick = "googleLogin()">
-         Login with Google
-        </button>
-
       
-    <script>
-        
-function googleLogin() {
-                           
-    const app = firebase.app();                                    
-    const provider = new firebase.auth.GoogleAuthProvider();
-    
-    firebase.auth()signInWithPopup(provider)
-   
-        .then(result {
-          const user = result.user;
-          document.write('Hello, ${user.displayName}')
-            console.log(user)
+      <button onclick = "googleLogin()"> Login with Google </button>
 
-          })
-          .catch(console.log)
+    <script>
+        function googleLogin() {                                
+           
+            var provider = new firebase.auth.GoogleAuthProvider();
+            
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+                var token = result.credential.accessToken;
+                var user = result.user;
+          }) 
 }
     </script>
   </body>

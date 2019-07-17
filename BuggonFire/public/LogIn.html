@@ -8,21 +8,18 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-      <header>
-      </header>
-      <form action="index.html" method="post">
-        <h1>Sign In</h1>
-        <fieldset>
-          <legend></legend>
-                  <legend><span class="number">1</span></legend>
-                  <label for="mail">Email</label>
-                  <input type="email" id="mail" name="user_email">
-                  <legend><span class="number">2</span></legend>
-                  <label for="password">Password</label>
-                  <input type="password" id="password" name="user_password">
-            </fieldset>
-<button type="submit">Sign in</button>
 
-      </form>
+        <script>
+            function googleLogin() {                                
+               
+                var provider = new firebase.auth.GoogleAuthProvider();
+                
+                firebase.auth().signInWithPopup(provider).then(function(result) {
+                    var token = result.credential.accessToken;
+                    var user = result.user;
+              })
+             
+    }
+        </script>
     </body>
 </html>
