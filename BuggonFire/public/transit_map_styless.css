@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html, body {
+	height: 100%;
+	margin: 1px;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	background-image: -webkit-repeating-linear-gradient(270deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.61) 100%), url(images/HongKongML.jpg);
+	background-image: -moz-repeating-linear-gradient(270deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.61) 100%), url(images/HongKongML.jpg);
+	background-image: -o-repeating-linear-gradient(270deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.61) 100%), url(images/HongKongML.jpg);
+	background-image: repeating-linear-gradient(180deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.61) 100%), url(images/HongKongML.jpg);
+	background-size: contain;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	}
+
+
+#map {
+	height: 70%;
+	width: 60%;
+	top: 0%;
+	display: inherit;
+	overflow-x: hidden;
+	clear: left;
+	float: right;
+	border-radius: 20px;
+	background-color: #FFA501;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin-top: 80px;
+	margin-right: 25px;
+	margin-bottom: auto;
+	min-width: 350px;
+}
+
+
+#directions {
+	text-align: left;
+	text-shadow: 0px 0px;
+	margin-right: 10px;
+	max-width: 35%;
+	min-width: 350px;
+	display: inherit;
+	float: left;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.controls,.controls1 {
+	margin-top: 10px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	outline: #F1B147;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	float: none;
+	border-radius: 9px;
+}
+.controls {
+	height: 50px;
+	color: white;
+	text-shadow: 0px 0px #FFFFFF;
+	float: none;
+	clear: none;
+	max-width: 30%;
+}
+
+.controls1{
+height: 65px;
+color: orange;
+}
+
+#origin-input,
+#destination-input {
+	background-color: #FFA500;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 200px;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin-right: 12px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+	border-color: #4d90fe;
+	padding-top: 20px;
+	/* [disabled]padding-right: 4px; */
+}
+
+#mode-selector {
+color: #E97216;
+margin-left: 12px;
+padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+font-family: Roboto;
+font-size: 13px;
+font-weight: 300;
+}
+
+h3 {
+	color: orange;
+	font-family: Roboto;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	float: none;
+	clear: none;
+}

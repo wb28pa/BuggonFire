@@ -1,15 +1,18 @@
 /* Global Layout Set-up */
-* { 
-  box-sizing: border-box;
+* {
+	box-sizing: content-box;
+	border-radius: 0px;
 }
   
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #FBB03B;
-  background: #FBB03B;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #FBB03B;
+	background-color: #FBB03B;
+	font-weight: 400;
+	font-size: 1rem;
 }
 /* Link Styles */
 
@@ -24,12 +27,17 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
-  width: 100%;
-  background: #222222;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
+	width: 100%;
+	background: #222222;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 1px;
+	position: fixed;
+	text-align: center;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 .nav {
   display: flex;
@@ -43,7 +51,8 @@ a:hover {
   display: none;
 }
 .nav li {
-  padding: 5px 10px 10px 10px;
+	padding: 5px 10px 10px 10px;
+	max-width: 100%;
 }
 .nav a {
   transition: all .5s;
@@ -53,59 +62,85 @@ a:hover {
 }
 
 header {
-  text-align: center;
-  background: url('images/HongKongNight2.jpg') no-repeat top center ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hiden;
-  padding-top: 30px;
-  
- 
+	text-align: center;
+	background: url('images/HongKongNight2.jpg') no-repeat top center;
+	
+	overflow: hiden;
+	padding-top: 30px;
+	background-size: 100% auto;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 header {
-  line-height: 15;
+	line-height: 15;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 
 
 header .profile-image {
-    margin-top: 3px;
-    margin-bottom: -300px;
-    overflow: hidden;
-    width: 500px;
-    height: 350px;
-    transition: all .20s;
+	margin-top: 3px;
+	margin-bottom: -300px;
+	overflow: hidden;
+	width: 35%;
+	transition: all 1s;
+	max-width: 35%;
+	text-decoration: none;
+	clear: none;
+	top: 40%;
+	padding-top: 15px;
 }
 /*header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);*/
 header .profile-image:hover {
-    transform: rotatey(35deg);
-    transform-style: preserve3d;
-    overflow: hidden;
-  
-  
+	transform: rotatey(35deg);
+	transform-style: preserved;
+	overflow: hidden;
+	float: none;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	width: 100%;
+	top: 40%;
+	padding-top: 15px;
 }
 .brand {
-  color: #F7931E;
-  padding-top: 1px;
-  display: table;
-  margin: 30px auto;
+	color: #F7931E;
+	display: table;
+	margin: 30px auto;
+	max-height: 25%;
+	min-width: 350px;
+	min-height: 35px;
+	font-size: larger;
+	padding-top: 10%;
+	padding-left: 0px;
 } 
 .location {
     background-color: #222;
     color: #FB9B17;
 }
 .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+	margin: 30px;
+	padding: 20px 40px 40px;
+	text-align: center;
+	background: #fff;
+	border-bottom: 4px solid #ccc;
+	border-radius: 6px;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 .card:hover {
-  border-color: #ff99ff;
+	border-color: #222222;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	text-align: center;
+	font-size: larger;
+	margin-top: 30px;
 }
 
 ul.skills {
@@ -175,7 +210,7 @@ a.social:hover {
 }
 
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width:350px){
   
   .flex {
       display: flex;
@@ -185,11 +220,13 @@ a.social:hover {
   }
 
   header {
-    min-height: 450px;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
   }
 
   .nav {
-    max-width: 1200px;
+	margin-right: 20px;
   }
 
   .nav .name {
@@ -215,6 +252,17 @@ a.social:hover {
 }
 
 .profileimage {
+	
 }
 .NewAccount {
+}
+.googlebutton {
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 0px 0px #232323;
+	color: #FBAF3A;
+	background-color: #222222;
+	font-weight: 700;
+	font-size: 1rem;
+	-webkit-box-shadow: 0px 0px #222222;
+	box-shadow: 0px 0px #222222;
 }

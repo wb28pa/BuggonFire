@@ -1,0 +1,25 @@
+[debug] [2019-07-21T15:26:46.824Z] ----------------------------------------------------------------------
+[debug] [2019-07-21T15:26:46.826Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\achoi11\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-07-21T15:26:46.827Z] CLI Version:   7.0.2
+[debug] [2019-07-21T15:26:46.827Z] Platform:      win32
+[debug] [2019-07-21T15:26:46.827Z] Node Version:  v10.16.0
+[debug] [2019-07-21T15:26:46.828Z] Time:          Sun Jul 21 2019 11:26:46 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-07-21T15:26:46.828Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-21T15:26:46.843Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-21T15:26:46.845Z] > authorizing via signed-in user
+[debug] [2019-07-21T15:26:46.845Z] [iam] checking project bugg-f2eac for permissions ["firebase.projects.get"]
+[debug] [2019-07-21T15:26:46.848Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bugg-f2eac:testIamPermissions  
+
+[debug] [2019-07-21T15:26:47.145Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-21T15:26:47.156Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bugg-f2eac  
+ 
+[debug] [2019-07-21T15:26:47.657Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\achoi11\Desktop\BuggonFire'...
+[info] 
+[debug] [2019-07-21T15:26:47.661Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411767400580/clients/_:getWebAppConfig  
+ 
+[debug] [2019-07-21T15:26:48.061Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

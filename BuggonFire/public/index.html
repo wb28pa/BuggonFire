@@ -27,26 +27,25 @@
         <ul class="nav">
           <li class="name">Bugg.Social</li>
           <li><a href="index.html" class="HomePage">Home</a></li>
-		  <li><a href="transit_map.html" class="NewAccount">transit map</a></li>
-          <li>  <button onclick = "googleLogin()"> Login with Google </button></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="transit_map.html" class="TransitMap">Transit Map</a></li>
+          <li><button class="googlebutton" onclick = "googleLogin()"> Login with Google </button></li>
+		  <li><a href="about.html" class="HomePage">About</a></li>
         </ul>
     </div>
 
     <header>
-      <img src="images/BuggLogo2@2x.png" alt="Bugg Social Main Logo"
+      <img src="images/buggv3.svg" alt="Bugg Social Main Logo"
        class="profile-image profileimage">
-      <h1 class="brand">Bee Efficient, Bee Effective</h1>
-      <p>Exspirance Creative Design</p>
-      <p class="tag location"><strong>A Georgia State University Project</strong></p>
+      <h1 class="brand"><strong>Bee Efficient, Bee Effective</strong><br>
+      </h1>
+<p class="tag location"><strong>A Georgia State University Project</strong></p>
     </header>
 
     <main class="flex">
       <div class="card">
         <h2>About Our Brand:</h2>
-        <p> &nbsp; &nbsp; At Bugg, we believe better School is only accomplished through dedication, time management, and quality work. We collectively understand that our overall achievement will be represented through the individual tasks we are assigned. As a team, we are prepared to work together, struggle together, and achieve success together!<br>
+        <p> &nbsp; &nbsp; At Bugg, we believe better design is only accomplished through dedication, time management, and quality work. We collectively understand that our overall achievement will be represented through the individual tasks we are assigned. As a team, we are prepared to work together, struggle together, and achieve success together!<br>
         </p>
-
       </div> 
 
       <div class="card">
@@ -58,13 +57,11 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <blockquote>
-          <blockquote>
             <blockquote>
               <p><strong>Let us simplify your life!</strong></p>
             </blockquote>
-          </blockquote>
-        </blockquote>
+          
+        
       </div> 
 
     </main>
@@ -76,10 +73,7 @@
       </ul>
       <p class="copyright">Copyright 2019 Bugg.Social</p>
     </footer>
-      
-      <button onclick = "googleLogin()"> Login with Google </button>
-
-    <script>
+<script>
         function googleLogin() {                                
            
             var provider = new firebase.auth.GoogleAuthProvider();
